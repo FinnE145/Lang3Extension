@@ -1,0 +1,38 @@
+{
+  "name": "lang3",
+  "displayName": "Lang3 Language Support",
+  "description": "Language support for Lang3",
+  "version": "0.0.1",
+  "publisher": "finne",
+  "author": {
+    "name": "Finn",
+    "email": "finne014@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lang3",
+      "aliases": ["Lang 3", "lang3"],
+      "extensions": [".lang3",".l3"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lang3",
+      "scopeName": "source.lang3",
+      "path": "./syntaxes/lang3.tmLanguage.json"
+    }],
+    "themes": [
+      {
+        "label": "Lang3 Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/lang3-dark-theme.json"
+      }
+    ]
+  }
+}

@@ -1,6 +1,18 @@
+# node.js
 node_modules/
 bower_components/
 *.log
 
 build/
 dist/
+
+# dotnet / C#
+bin/
+obj/
+*.csproj.user
+*.sln.DotSettings.user
+.vs/
+*.dll
+*.exe
+*.pdb
+appsettings.local.json
