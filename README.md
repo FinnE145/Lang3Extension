@@ -3,7 +3,8 @@
 This is a Visual Studio Code extension that provides support for the [Lang3 programming language](https://github.com/FinnE145/Lang3). It includes syntax highlighting, a dark theme, and has plans for a full language server.
 
 ## Installation
-> **Note**: This extension is not yet published to the Visual Studio Code Marketplace. You will need to install it manually.
+
+Search for "Lang3" in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/) or in the extensions sidebar in VS Code and click "Install". Alternatively, you can install the extension manually by following these steps:
 
 1. Clone or download the extension repository
 2. Open the extension folder in VS Code
@@ -13,7 +14,7 @@ This is a Visual Studio Code extension that provides support for the [Lang3 prog
 6. To package the extension as a `.vsix` file, run `vsce package`
 7. Install the `.vsix` file by opening the Extensions view in VS Code, clicking the "..." menu, and selecting "Install from VSIX..."
 
-Alternatively, you can place the extension folder directly in your VS Code extensions directory:
+If that doesn't work, you can place the extension folder directly in your VS Code extensions directory:
 - **Windows**: `%USERPROFILE%\.vscode\extensions\`
 - **macOS**: `~/.vscode/extensions/`
 - **Linux**: `~/.vscode/extensions/`

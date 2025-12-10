@@ -1,16 +1,23 @@
 {
   "name": "lang3",
-  "displayName": "Lang3 Language Support",
+  "displayName": "Lang3",
   "description": "Language support for Lang3",
   "version": "0.0.1",
-  "publisher": "finne",
+  "publisher": "FinnE145",
   "author": {
     "name": "Finn",
-    "email": "finne014@gmail.com"
+    "email": "finne014@gmail.com",
+    "url": "https://github.com/FinnE145"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FinnE145/Lang3Extension"
+  },
+  "license": "GPL-3.0-only",
   "engines": {
     "vscode": "^1.88.0"
   },
+  "icon": "images/Lang3LogoSquare.png",
   "categories": [
     "Programming Languages",
     "Themes"
