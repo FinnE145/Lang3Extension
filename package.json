@@ -23,17 +23,29 @@
     "Themes"
   ],
   "contributes": {
-    "languages": [{
-      "id": "lang3",
-      "aliases": ["Lang 3", "lang3"],
-      "extensions": [".lang3",".l3"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "lang3",
-      "scopeName": "source.lang3",
-      "path": "./syntaxes/lang3.tmLanguage.json"
-    }],
+    "languages": [
+      {
+        "id": "lang3",
+        "aliases": ["Lang 3", "lang3"],
+        "extensions": [".lang3", ".l3"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "lang3",
+        "scopeName": "source.lang3",
+        "path": "./syntaxes/lang3.tmLanguage.json"
+      },
+      {
+        "scopeName": "markdown.lang3.codeblock",
+        "path": "./syntaxes/lang3-markdown.tmLanguage.json",
+        "injectTo": ["text.html.markdown"],
+        "embeddedLanguages": {
+          "meta.embedded.block.lang3": "lang3"
+        }
+      }
+    ],
     "themes": [
       {
         "label": "Lang3 Dark",
