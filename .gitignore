@@ -16,3 +16,6 @@ obj/
 *.exe
 *.pdb
 appsettings.local.json
+
+# Custom
+_test/
