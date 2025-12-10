@@ -19,3 +19,5 @@ appsettings.local.json
 
 # Custom
 _test/
+*.vsix
+VSIX Releases/
