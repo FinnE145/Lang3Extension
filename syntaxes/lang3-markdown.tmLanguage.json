@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "scopeName": "markdown.lang3.codeblock",
+  "injectionSelector": "L:text.html.markdown",
+  "fileTypes": [],
+  "patterns": [
+    { "include": "#lang3-code-block" }
+  ],
+  "repository": {
+    "lang3-code-block": {
+      "name": "markup.fenced_code.block.markdown",
+      "begin": "(^|\\G)(\\s*)(\\`{3,})\\s*(?i:(lang3|l3)(\\s+[^`~]*)?$)",
+      "end": "(^|\\G)(\\2|\\s{0,3})(\\3)\\s*$",
+      "beginCaptures": {
+        "3": { "name": "punctuation.definition.markdown" },
+        "4": { "name": "fenced_code.block.language.markdown" },
+        "5": { "name": "fenced_code.block.language.attributes.markdown" }
+      },
+      "endCaptures": {
+        "3": { "name": "punctuation.definition.markdown" }
+      },
+      "patterns": [
+        {
+          "begin": "(^|\\G)(\\s*)(.*)",
+          "while": "(^|\\G)(?!\\s*([`]{3,})\\s*$)",
+          "contentName": "meta.embedded.block.lang3",
+          "patterns": [
+            { "include": "source.lang3" }
+          ]
+        }
+      ]
+    }
+  }
+}
